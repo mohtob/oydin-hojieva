@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Шеърлар — Ойдин Ҳожиева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Ойдин Ҳожиева</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Бош саҳифа</a></li>
+      <li><a href="biography.html">Таржимаи ҳол</a></li>
+      <li><a href="books.html">Китоблар</a></li>
+      <li><a href="poems.html" class="active">Шеърлар</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="tributes.html">Эътирофлар</a></li>
+      <li><a href="interviews.html">Мақолалар</a></li>
+      <li><a href="media.html">Медиа</a></li>
+      <li><a href="memories.html">Хотиралар</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="section-label">Ижод</p>
+    <h1 class="section-title">Шеърлар</h1>
+    <div class="section-divider"></div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- =========================================================
+           ЯНГИ ШЕЪР ҚЎШИШ УЧУН: қуйидаги блокни кўчиринг ва
+           .poems-tabs ичига button, .poems-panels ичига div қўшинг.
+           Рақамни навбатдаги рақамга ўзгартиринг (poem-4, poem-5, ...).
+      ========================================================= -->
+
+      <div class="poems-tabs" id="poem-tabs">
+        <button class="poem-tab active" onclick="showPoem(0, this)">Ватанга Муҳаббат Изҳори</button>
+        <button class="poem-tab" onclick="showPoem(1, this)">Бухоро</button>
+        <button class="poem-tab" onclick="showPoem(2, this)">Ғазал</button>
+        <button class="poem-tab" onclick="showPoem(3, this)">Ситори Моҳи Хосса</button>
+        <!-- Янги шеър учун: <button class="poem-tab" onclick="showPoem(4, this)">ШЕЪ НОМ</button> -->
+      </div>
+
+      <!-- POEM 1 -->
+      <div class="poem-panel active" id="poem-0">
+        <div class="poem-card">
+          <h2 class="poem-heading">Ватанга Муҳаббат Изҳори</h2>
+          <p class="poem-title-en">A Declaration of Love for the Homeland</p>
+          <div class="poem-body">
+<div class="poem-stanza">Ҳазориспанд бўлсам саҳроларингда,
+Феруза тош бўлсам дарёларингда,
+Ҳайит ойи бўлсам самоларингда,
+Меҳру вафо—кўрар дунёларингда,
+Сени ёмон кўздан асрамоқ учун!</div>
+
+<div class="poem-stanza">Остонангда ётган итинг бўлойин,
+Наслингни пок тутган сутинг бўлойин,
+Кўзингдаги ҳурлик ўтинг бўлойин,
+Баланд тоғларда бургутинг бўлойин,
+Сени ғаним кўздан асрамоқ учун!</div>
+
+<div class="poem-stanza">Сўзим бор—савашда қилич бўлоли,
+Шахдим бор—қуввати биринч бўлоли,
+Яхши-ёмонингда илинж бўлоли,
+Ипак жоним метиндан синч бўлоли,
+Сени офат кўздан асрамоқ учун!</div>
+
+<div class="poem-stanza">Фақат сен кўзимга боқиб тур, Ватан,
+Онамдай елкамга қоқиб тур, Ватан,
+Қалбимда дарёдай оқиб тур, Ватан,
+Бошимда Хумодай балқиб тур, Ватан,
+Мени гумон сўздан асрамоқ учун!
+Сени ёмон кўздан асрамоқ учун!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POEM 2 -->
+      <div class="poem-panel" id="poem-1">
+        <div class="poem-card">
+          <h2 class="poem-heading">Бухоро</h2>
+          <p class="poem-title-en">Bukhara</p>
+          <div class="poem-body">
+<div class="poem-stanza">Минорида оқ лайлаклар қишлаган,
+Арк майдонда оқ жийронлар кишнаган,
+Жаҳонгир тўп сарбозларни хушлаган,
+Эслайверса, дилим санчур, Бухоро.</div>
+
+<div class="poem-stanza">Расталарда кундал-кимхоб товланур,
+Даштларида қулон-кийик овланур.
+Йигитлари Ватан учун довланур,
+Ёвларининг бошин янчур, Бухоро!</div>
+
+<div class="poem-stanza">Дарвозаси қулфу калит кўрмаган,
+Тош кўчаси макру палид кўрмаган,
+Отинлари даврада сўз бермаган,
+Кимлар солди сенга занжир, Бухоро!</div>
+
+<div class="poem-stanza">Етти уйинг етимхона қилдилар,
+Саккиз уйинг сомонхона қилдилар,
+Масжидларинг ўтинхона қилдилар,
+Ўйлайверсам, дилим ранжур, Бухоро.</div>
+
+<div class="poem-stanza">Мезанада милтиқ ўқлар куфр зот,
+Чигирткадай чирмаб келар оч саллот,
+Сохта санам келди, сўнди эътиқод,
+Дину иймон-ай муҳожир, Бухоро!</div>
+
+<div class="poem-stanza">Ёш қизларни беркитарлар хумларга,
+Келинчаклар ўзин отар гумларга,
+Навқиронлар айланадир чимларга,
+Сариқ девдан қаён қочур Бухоро?</div>
+
+<div class="poem-stanza">Йўл-йўлакай тилло сочиб қочди ким,
+Ўз юртига аза очиб қочди ким,
+Шаҳидликнинг шаробидан ичди ким,
+Лошинг чўқир чўлда ғажир, Бухоро…</div>
+
+<div class="poem-stanza">Саноч-саноч тилло-кумуш олдилар,
+Мил тортишиб, кўнглингни кўр қилдилар,
+Битинггача териб, теринг шилдилар,
+Ўзи сағир, елка яғир Бухоро…</div>
+
+<div class="poem-stanza">Муллоларинг чиқардилар «қулоққа»,
+Булбул кетиб, бойқуш чиқди қўндоққа,
+Орифларинг солиб минг бир қийноққа,
+Зулм қуши бола очур, Бухоро!</div>
+
+<div class="poem-stanza">Қизилларга тилмоч бўлган отам-а,
+Қилич эмас, омоч бўлган отам-а,
+Ота юрти торож бўлган отам-а,
+Айтсам, бошдан ҳушим учар, Бухоро!</div>
+
+<div class="poem-stanza">Найранг қилиб гоҳ «оқ»лар, гоҳ «қизил»лар,
+Жоҳилларнинг қули бўлди фозиллар,
+Авраб келди мени зулмат-бозингар,
+Гумроҳларинг бир йўл кечир, Бухоро!</div>
+
+<div class="poem-stanza">Бир ғиштингга дунё маҳр бўлмагай,
+Шарифликда сендай шаҳр бўлмагай,
+Ҳеч бир авлод бизча ғофил бўлмагай,
+Ғофилларинг бир йўл кечир, Бухоро!</div>
+
+<div class="poem-stanza">Айтсам, бошдан ҳушим учар, Бухоро!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POEM 3 -->
+      <div class="poem-panel" id="poem-2">
+        <div class="poem-card">
+          <h2 class="poem-heading">Ғазал</h2>
+          <p class="poem-title-en">Ghazal</p>
+          <div class="poem-body">
+<div class="poem-stanza">Қаён борсам, жаҳон ичра борур ул ён Бухоро ҳам,
+Сўраб бахтим сомон бўлсам, бўлур сомон Бухоро ҳам.</div>
+
+<div class="poem-stanza">Ниҳолим, мунисим, дардкаш, танамда қатраи жонсан,
+Ғанимга ўқ отар бўлсам, бўлур камон Бухоро ҳам.</div>
+
+<div class="poem-stanza">Агар хайру савоб ўлсам, бўлур осмон Бухоро ҳам,
+Ки мен хоку туроб бўлсам, бўлур гирён Бухоро ҳам.</div>
+
+<div class="poem-stanza">Шаҳидон, сарварон, дўстон, Хожайи Бўстон Бухоро ҳам,
+Валиюл комили аъзам олийул унвон Бухоро ҳам.</div>
+
+<div class="poem-stanza">Басе зебу бу зийнатлар хасу хошок бўлур, Ойдин,
+Сенга мулки худодан ганж халқи раҳмон Бухоро ҳам.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POEM 4 -->
+      <div class="poem-panel" id="poem-3">
+        <div class="poem-card">
+          <h2 class="poem-heading">Ситори Моҳи Хосса</h2>
+          <p class="poem-title-en">Star of the Chosen Moon</p>
+          <div class="poem-body">
+<div class="poem-stanza">Уста Ширин нақш чеккан Оқ қаср.
+Гулганчларда ўрмалайди шоҳи сир.
+Аллоҳ билан шивирлашган улуғ Пир,
+Сизни Бухородай афсона кўрдим.</div>
+
+<div class="poem-stanza">Ганчларда гапирган япроқлар сўлим,
+Томирлари тилло янтоқлар сўлим,
+Киприкдан тўкилган титроқлар сўлим,
+Моний назар солган кошона кўрдим.</div>
+
+<div class="poem-stanza">Ҳикмат меҳробидир заррин равоқлар,
+Жаннат устунидир мунаққаш тоқлар,
+Ҳар ғунча қатида ёқут чироқлар,
+Ҳунар фариштасин парвона кўрдим.</div>
+
+<div class="poem-stanza">Чорқирра ғиштларда Хизр панжаси,
+Нилий кошинларда нур алангаси.
+Мунг иси, дард иси, тер ва қон иси
+Қуллик меҳнатини шоҳона кўрдим.</div>
+
+<div class="poem-stanza">Кўксингни топталаб ўтган туёқлар,
+Жойнамозинг тепган манфур оёқлар,
+Қуббангга тўп отган Чингизсиёқлар—
+Бекларни дардингга бегона кўрдим.</div>
+
+<div class="poem-stanza">Товуслар қичқарар телба йиғида,
+Доғ кўрдим замоннинг қорачуғида,
+Гўзал ҳайратларнинг ҳайрон туғида
+Жаҳолатдан тамға-нишона кўрдим…</div>
+
+<div class="poem-stanza">Султон-ку суягин асли хор этмас,
+Моҳи Хоссам, сенга минг баҳор етмас,
+Қай бир халқ ўз эркин устивор этмас—
+Етти пуштини шўрпешона кўрдим!</div>
+
+<div class="poem-stanza">«Қази билан қарта едим, оғзимда йўқ,
+Кимхоб билан адрас кийдим, эгнимда йўқ»,—
+Деганлардан мерос мулким, тенгинг-да йўқ,
+Зийнат ҳадисида фарзона кўрдим!</div>
+
+<div class="poem-stanza">Бухородай ажиб афсона кўрдим.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           ЯНГИ ШЕЪР: шу блокни кўчиринг, id="poem-4" га ўзгартиринг
+           ва юқоридаги tabs ичига button қўшинг
+
+      <div class="poem-panel" id="poem-4">
+        <div class="poem-card">
+          <h2 class="poem-heading">ШЕЪ НОМИ</h2>
+          <p class="poem-title-en">English Title (optional)</p>
+          <div class="poem-body">
+<div class="poem-stanza">ШЕЪ МАТНИ
+БУ ЕРГА</div>
+          </div>
+        </div>
+      </div>
+      ========================================================= -->
+
+    </div>
+  </section>
+
+  <footer>
+    <strong>Ойдин Ҳожиева</strong>
+    Ўзбекистон Халқ Шоираси · 1942 —
+    <br><br>
+    Барча ҳуқуқлар ҳимояланган © 2024
+  </footer>
+
+  <script>
+    function showPoem(index, btn) {
+      document.querySelectorAll('.poem-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.poem-tab').forEach(b => b.classList.remove('active'));
+      document.getElementById('poem-' + index).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

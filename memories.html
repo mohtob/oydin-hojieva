@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Хотиралар — Ойдин Ҳожиева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .memory-entry {
+      max-width: 760px;
+      margin: 0 auto 5rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .memory-entry:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .memory-photo {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      display: block;
+      margin-top: 1.8rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+
+    .memory-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--navy-mid), var(--navy));
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+      border: 2px dashed rgba(196,165,88,0.2);
+      margin-top: 1.8rem;
+    }
+
+    .memory-photo-placeholder .ph-icon { font-size: 2rem; margin-bottom: 0.4rem; }
+
+    .memory-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .memory-text {
+      font-family: 'Noto Serif', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.9;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+    }
+
+    .memory-caption {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      border-left: 3px solid var(--gold);
+      padding-left: 1rem;
+      line-height: 1.8;
+    }
+
+    .poem-block {
+      border-top: 3px solid var(--gold);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .poem-block .poem-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+    }
+
+    .poem-block .poem-author {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      font-style: italic;
+      margin-bottom: 1.8rem;
+    }
+
+    .poem-block .poem-lines {
+      font-family: 'Noto Serif', serif;
+      font-style: italic;
+      font-size: 1.0rem;
+      line-height: 2;
+      color: var(--text);
+      white-space: pre-line;
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Ойдин Ҳожиева</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Бош саҳифа</a></li>
+      <li><a href="biography.html">Таржимаи ҳол</a></li>
+      <li><a href="books.html">Китоблар</a></li>
+      <li><a href="poems.html">Шеърлар</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="tributes.html">Эътирофлар</a></li>
+      <li><a href="interviews.html">Мақолалар</a></li>
+      <li><a href="media.html">Медиа</a></li>
+      <li><a href="memories.html" class="active">Хотиралар</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="section-label">Қизи хотирасидан</p>
+    <h1 class="section-title">Хотиралар</h1>
+    <div class="section-divider"></div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- =========================================================
+           ЯНГИ ХОТИРА ҚЎШИШ УЧУН: шу блокни кўчиринг
+      ========================================================= -->
+
+      <!-- MEMORY 1 -->
+      <div class="memory-entry">
+        <p class="memory-label">Хотира · Германия</p>
+
+        <div class="memory-text">
+          Frankfurtdagilar O'zbekiston qovunlariga juda havasi keldi.
+        </div>
+        <div class="memory-caption">
+          «Sizlar qaysi mamlakatdan kelgansizlar, qaysi millatdansizlar?»<br>
+          «Biz O'zbeklarmiz, O'zbekistondanmiz.»<br>
+          «Juda chiroyli yuzli inson ekansizlar, chiroyli millat ekansizlar,
+          istarangiz issiq, yuzingizdan oftob taralganday.»
+        </div>
+
+        <img class="memory-photo" src="photos/gallery/memory-frankfurt.jpg" alt="Frankfurt xotirasi"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="memory-photo-placeholder" style="display:none;">
+          <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/gallery/memory-frankfurt.jpg
+        </div>
+      </div>
+
+      <!-- MEMORY 2 -->
+      <div class="memory-entry">
+        <p class="memory-label">Хотира · Оила</p>
+
+        <div class="memory-caption" style="border-left: none; padding-left: 0; font-size: 1.15rem; color: var(--navy); font-style: italic;">
+          «Senga kuyov… menga palov»
+        </div>
+
+        <img class="memory-photo" src="photos/gallery/memory-granddaughter.jpg" alt="Nabira bilan"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="memory-photo-placeholder" style="display:none;">
+          <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/gallery/memory-granddaughter.jpg
+        </div>
+      </div>
+
+      <!-- MEMORY 3 — POEM -->
+      <div class="memory-entry">
+        <p class="memory-label">Шеър · Қизидан онасига</p>
+
+        <div class="poem-block">
+          <div class="poem-title">Oydinjon</div>
+          <div class="poem-author">Bo'stonjon — onasiga</div>
+          <div class="poem-lines">Umr yo'llarida payvasta jonmiz,
+Bir orzu, bir imon, bitta armonmiz.
+Bitta yurakmizu bitta tilakmiz,
+Bir dardu bir tugʻyon, bitta darmonmiz.
+
+O'zingsan pokizam, Shirin kalomim,
+O'zingsan tong bilan qutlug' salomim.
+Ozingsan oy yuzli, o'tli nafasim,
+Poyi muboraksan, jonbaxshsan — tilsim.
+
+Bu shunday farovon qanotli tuygu,
+Siz parvarish etgan bogʻda ochilar.
+Ham ezgu, charogʻon, ham totli tuygu
+Sizni o'ylaganda nurday sochilar.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <strong>Ойдин Ҳожиева</strong>
+    Ўзбекистон Халқ Шоираси · 1942 —
+    <br><br>
+    Барча ҳуқуқлар ҳимояланган © 2024
+  </footer>
+
+</body>
+</html>

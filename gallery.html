@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея — Ойдин Ҳожиева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Ойдин Ҳожиева</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Бош саҳифа</a></li>
+      <li><a href="biography.html">Таржимаи ҳол</a></li>
+      <li><a href="books.html">Китоблар</a></li>
+      <li><a href="poems.html">Шеърлар</a></li>
+      <li><a href="gallery.html" class="active">Галерея</a></li>
+      <li><a href="tributes.html">Эътирофлар</a></li>
+      <li><a href="interviews.html">Мақолалар</a></li>
+      <li><a href="media.html">Медиа</a></li>
+      <li><a href="memories.html">Хотиралар</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="section-label">Фотосуратлар</p>
+    <h1 class="section-title">Галерея</h1>
+    <div class="section-divider"></div>
+  </div>
+
+  <section>
+    <div class="container-wide">
+      <!--
+      <p style="color: var(--text-soft); font-size:0.9rem; margin-bottom: 2.5rem;">
+        Расм қўшиш учун: фотосуратни <strong>photos/gallery/</strong> папкасига сақланг,
+        сўнг қуйидаги намуна блокини кўчириб, <code>src=""</code> ва изоҳни тўлдиринг.
+      </p>
+    -->
+      <!-- ===================== ПОРТРЕТ ===================== -->
+      <div class="gallery-section">
+        <h3 class="gallery-section-title">Портрет</h3>
+        <div class="photo-grid portrait-grid">
+
+          <!-- =========================================================
+               НАМУНА — янги расм қўшиш учун шу блокни кўчиринг:
+
+          <div class="photo-item" onclick="openLightbox('photos/gallery/FAYL.jpg', 'Изоҳ матни')">
+            <img src="photos/gallery/FAYL.jpg" alt="Изоҳ матни"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм топилмади
+            </div>
+            <div class="photo-caption">Изоҳ матни</div>
+          </div>
+          ========================================================= -->
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin2.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin2.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin2.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin3.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin3.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin3.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin4.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin4.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin4.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin5.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin5.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin5.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin6.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin6.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin6.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin7.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin7.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin7.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin8.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin8.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin8.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin9.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin9.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin9.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <div class="photo-item portrait-item" onclick="openLightbox('photos/portraits/oydin10.jpg', 'Ойдин Ҳожиева')">
+            <img src="photos/portraits/oydin10.jpg" alt="Ойдин Ҳожиева"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🖼</span>Расм қўшинг:<br>photos/portraits/oydin10.jpg
+            </div>
+            <div class="photo-caption">Ойдин Ҳожиева</div>
+          </div>
+
+          <!-- Яна расм қўшиш учун шу ерга блок қўшинг -->
+
+        </div>
+      </div>
+
+      <!-- ===================== АДАБИЙ ЖАМОА ===================== -->
+      <div class="gallery-section">
+        <h3 class="gallery-section-title">Адабий жамоа — ёзувчилар билан</h3>
+        <div class="photo-grid">
+
+          <!-- Расмларни photos/gallery/ папкасига сақланг ва блок қўшинг -->
+          <div class="photo-placeholder" style="border-radius:4px; cursor:default;">
+            <span class="ph-icon">📷</span>
+            Расмларни photos/gallery/ папкасига<br>сақланг ва блок қўшинг
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== ОИЛА ===================== -->
+      <div class="gallery-section">
+        <h3 class="gallery-section-title">Оила</h3>
+        <div class="photo-grid">
+		<div class="photo-item" onclick="openLightbox('photos/gallery/2012-06.jpg', 'Изоҳ матни')">
+  			<img src="photos/gallery/2012-06.jpg" alt="Изоҳ матни" />
+  			<div class="photo-caption">Изоҳ матни</div>
+		</div>
+
+          <div class="photo-placeholder" style="border-radius:4px; cursor:default;">
+            <span class="ph-icon">👨‍👩‍👧</span>
+            Оилавий фотосуратлар<br>шу ерга қўшилади
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- ===================== МУКОФОТЛАР ===================== -->
+      <div class="gallery-section">
+        <h3 class="gallery-section-title">Мукофотлар ва орденлар</h3>
+        <div class="photo-grid">
+
+          <!-- Расм қўшиш: фотони photos/awards/ папкасига сақланг -->
+          <div class="photo-item" onclick="openLightbox('photos/awards/halq-shoirasi-1992.jpg', 'Ўзбекистон Халқ Шоираси унвони — 1992')">
+            <img src="photos/awards/halq-shoirasi-1992.jpg" alt="Ўзбекистон Халқ Шоираси 1992"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🏅</span>Расм қўшинг:<br>photos/awards/halq-shoirasi-1992.jpg
+            </div>
+            <div class="photo-caption">Ўзбекистон Халқ Шоираси — 1992</div>
+          </div>
+
+          <div class="photo-item" onclick="openLightbox('photos/awards/el-yurt-hurmati-1999.jpg', '«Эл-юрт ҳурмати» ордени — 1999')">
+            <img src="photos/awards/el-yurt-hurmati-1999.jpg" alt="Эл-юрт ҳурмати 1999"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🏅</span>Расм қўшинг:<br>photos/awards/el-yurt-hurmati-1999.jpg
+            </div>
+            <div class="photo-caption">«Эл-юрт ҳурмати» ордени — 1999</div>
+          </div>
+
+          <div class="photo-item" onclick="openLightbox('photos/awards/fidokorona-2021.jpg', '«Фидокорона хизматлари учун» ордени — 2021')">
+            <img src="photos/awards/fidokorona-2021.jpg" alt="Фидокорона хизматлари учун 2021"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🏅</span>Расм қўшинг:<br>photos/awards/fidokorona-2021.jpg
+            </div>
+            <div class="photo-caption">«Фидокорона хизматлари учун» — 2021</div>
+          </div>
+
+          <div class="photo-item" onclick="openLightbox('photos/awards/awards.jpg', 'Мукофотлар')">
+            <img src="photos/awards/awards.jpg" alt="Мукофотлар"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span class="ph-icon">🏅</span>Расм қўшинг:<br>photos/awards/awards.jpg
+            </div>
+            <div class="photo-caption">Мукофотлар</div>
+          </div>
+
+          <!-- Яна мукофот расми қўшиш учун шу ерга блок қўшинг -->
+
+        </div>
+      </div>
+
+      <!-- ===================== ТАДБИРЛАР ===================== -->
+      <div class="gallery-section">
+        <h3 class="gallery-section-title">Тадбирлар ва маросимлар</h3>
+        <div class="photo-grid">
+
+          <div class="photo-placeholder" style="border-radius:4px; cursor:default;">
+            <span class="ph-icon">🎤</span>
+            Тадбир ва маросим суратлари<br>шу ерга қўшилади
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <footer>
+    <strong>Ойдин Ҳожиева</strong>
+    Ўзбекистон Халқ Шоираси · 1942 —
+    <br><br>
+    Барча ҳуқуқлар ҳимояланган © 2024
+  </footer>
+
+  <script>
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').textContent = caption;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(event) {
+      if (!event || event.target !== document.getElementById('lightbox-img')) {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>

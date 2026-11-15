@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Таржимаи ҳол — Ойдин Ҳожиева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Ойдин Ҳожиева</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Бош саҳифа</a></li>
+      <li><a href="biography.html" class="active">Таржимаи ҳол</a></li>
+      <li><a href="books.html">Китоблар</a></li>
+      <li><a href="poems.html">Шеърлар</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="tributes.html">Эътирофлар</a></li>
+      <li><a href="interviews.html">Мақолалар</a></li>
+      <li><a href="media.html">Медиа</a></li>
+      <li><a href="memories.html">Хотиралар</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="section-label">Ҳаёт ва ижод</p>
+    <h1 class="section-title">Таржимаи ҳол</h1>
+    <div class="section-divider"></div>
+  </div>
+
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="bio-grid">
+
+        <!-- Sidebar -->
+        <div class="bio-sidebar">
+          <!-- TO ADD A PHOTO: replace "photos/portraits/oydin.jpg" with your photo file name
+               and make sure the photo file is saved in the photos/portraits/ folder -->
+          <img class="bio-photo" id="bio-photo-img" src="photos/portraits/oydin.jpg"
+               alt="Ойдин Ҳожиева"
+               onload="document.getElementById('photo-placeholder').style.display='none';"
+               onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';" />
+          <div class="bio-photo-placeholder" id="photo-placeholder"
+               onclick="document.getElementById('photo-upload').click()" title="Расм қўшиш учун босинг">
+            <span class="icon">🖼</span>
+            Расм қўшиш учун<br>шу ерга босинг
+          </div>
+          <input type="file" id="photo-upload" accept="image/*" style="display:none" onchange="loadPhoto(event)" />
+
+          <div class="bio-stats">
+            <div class="bio-stat">
+              <span class="bio-stat-label">Туғилган санаси</span>
+              <span class="bio-stat-value">22 апрель 1942</span>
+            </div>
+            <div class="bio-stat">
+              <span class="bio-stat-label">Туғилган жойи</span>
+              <span class="bio-stat-value">Хўжайи Бўстон қишлоғи, Қизилтепа тумани, Бухоро вилояти</span>
+            </div>
+            <div class="bio-stat">
+              <span class="bio-stat-label">Таълим</span>
+              <span class="bio-stat-value">Тошкент Давлат Университети, Филология факультети (1965)</span>
+            </div>
+            <div class="bio-stat">
+              <span class="bio-stat-label">Таржималар</span>
+              <span class="bio-stat-value">Шеъrlari rus, ukrain, qozoq, qirgʻiz, tojik, belorus, fransuz, ingliz va urdu tillarida nashr etilgan.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="bio-content">
+          <p class="section-label">Таржимаи ҳол</p>
+          <h2 class="section-title">Ойдин Ҳожиева</h2>
+          <div class="section-divider"></div>
+
+          <p>
+            Ойдин Ҳожиева 1942 йил 22 апрелда Бухоро вилоятининг Қизилтепа туманидаги
+            Хўжайи Бўстон қишлоғида таваллуд топган. 1965 йилда Тошкент Давлат университети
+            Филология факультетини тамомлаган.
+          </p>
+
+          <p>
+            Дастлабки шеърлари 1953 йилда туман газетасида эълон қилинган. 1961 йилда
+            «Тонгни қаршилаб» шеъри «Саодат» журналида (собиқ «Ўзбекистон хотин-қизлари»)
+            чоп этилган. Аёл қалбининг нозик ҳолатларини тасвирловчи шеърлари билан
+            кенг шуҳрат қозонган.
+          </p>
+
+          <p>
+            «Шарқ юлдузи» журналида бўлим бошлиғи (1965–1976), «Саодат» журналида
+            бўлим бошлиғи (1976–1985) ва «Гулшан» журналида муҳаррир (1985–1994)
+            сифатида фаолият юритган. 1994 йилдан «Саодат» журналининг газета
+            иловаси «Гулчеҳралар»нинг бош муҳаррири.
+          </p>
+
+          <p>
+            Ойдин Ҳожиева 1992 йилда «Ўзбекистон халқ шоираси» унвонига сазовор бўлган
+            ва 1999 йилда «Эл-юрт ҳурмати» ордени билан тақдирланган. 2021 йилда
+            «Фидокорона хизматлари учун» ордени билан мукофотланган.
+          </p>
+
+          <div class="highlight-box">
+            <p>«Аёл қалбининг нозик, теран ҳолатларини бетакрор тасвирловчи шоира»</p>
+            <cite>— Ўзбекистон адабий доираларидан</cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Ойдин Ҳожиева</strong>
+    Ўзбекистон Халқ Шоираси · 1942 —
+    <br><br>
+    Барча ҳуқуқлар ҳимояланган © 2024
+  </footer>
+
+  <script>
+    function loadPhoto(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = document.getElementById('bio-photo-img');
+        img.src = e.target.result;
+        img.style.display = 'block';
+        document.getElementById('photo-placeholder').style.display = 'none';
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Show placeholder if photo file not found
+    window.addEventListener('load', function() {
+      const img = document.getElementById('bio-photo-img');
+      if (!img.complete || img.naturalWidth === 0) {
+        img.style.display = 'none';
+        document.getElementById('photo-placeholder').style.display = 'flex';
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Медиа — Ойдин Ҳожиева</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .media-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--cream-dark);
+      transition: box-shadow 0.2s;
+    }
+
+    .media-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--navy);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .media-info {
+      padding: 1.4rem 1.6rem;
+      border-top: 3px solid var(--gold);
+    }
+
+    .media-type {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .media-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    .media-desc {
+      font-size: 0.88rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .video-fallback {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: none;
+      cursor: pointer;
+      background: var(--navy);
+    }
+
+    .video-fallback img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-fallback .play-btn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px; height: 68px;
+      background: rgba(255,0,0,0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .video-fallback:hover .play-btn {
+      background: red;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .video-fallback .play-btn::after {
+      content: '';
+      border-left: 24px solid white;
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      margin-left: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .media-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">Ойдин Ҳожиева</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Бош саҳифа</a></li>
+      <li><a href="biography.html">Таржимаи ҳол</a></li>
+      <li><a href="books.html">Китоблар</a></li>
+      <li><a href="poems.html">Шеърлар</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="tributes.html">Эътирофлар</a></li>
+      <li><a href="interviews.html">Мақолалар</a></li>
+      <li><a href="media.html" class="active">Медиа</a></li>
+      <li><a href="memories.html">Хотиралар</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <p class="section-label">Аудио ва видео</p>
+    <h1 class="section-title">Медиа</h1>
+    <div class="section-divider"></div>
+  </div>
+
+  <section>
+    <div class="container-wide">
+
+      <div class="media-grid">
+
+        <!-- =========================================================
+             ЯНГИ ВИДЕО ҚЎШИШ УЧУН: шу блокни кўчиринг.
+             YouTube ID ни топиш: youtube.com/watch?v=XXXX — XXXX ни олинг
+             ва src ичидagi ID ни алмаштиринг.
+
+        <div class="media-card">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/YOUTUBE_ID"
+                    title="Видео номи"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <div class="media-info">
+            <div class="media-type">Видео / Радио дастур</div>
+            <div class="media-title">Видео номи</div>
+            <div class="media-desc">Қисқача тавсиф</div>
+          </div>
+        </div>
+        ========================================================= -->
+
+        <div class="media-card">
+          <a class="video-fallback" style="display:block;"
+             href="https://www.youtube.com/watch?v=TsWRQELwLrY" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/TsWRQELwLrY/hqdefault.jpg" alt="Радио дастур" />
+            <div class="play-btn"></div>
+          </a>
+          <div class="media-info">
+            <div class="media-type">Радио дастур</div>
+            <div class="media-title">«Буgun» радио дастури — Ойдин Ҳожиева</div>
+            <div class="media-desc">Шоиранинг таваллуд кунига бағишланган радио дастури. Муаллиф: Абдуғафур Расулов.</div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <a class="video-fallback" style="display:block;"
+             href="https://www.youtube.com/watch?v=f9u7wgd_los" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/f9u7wgd_los/hqdefault.jpg" alt="Видео" />
+            <div class="play-btn"></div>
+          </a>
+          <div class="media-info">
+            <div class="media-type">Видео</div>
+            <div class="media-title">Ойдин Ҳожиева — Видео</div>
+            <div class="media-desc">Шоира ҳақида видео материал.</div>
+          </div>
+        </div>
+
+        <!-- Яна видеолар шу ерга қўшилади -->
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Ойдин Ҳожиева</strong>
+    Ўзбекистон Халқ Шоираси · 1942 —
+    <br><br>
+    Барча ҳуқуқлар ҳимояланган © 2024
+  </footer>
+
+
+</body>
+</html>
